@@ -1,6 +1,5 @@
 body {
   padding-top: 75px;
-  height: 3000px;
 }
 
 .box-shadow {
@@ -15,4 +14,9 @@ body {
 }
 .icones {
   height: 100px;
+}
+
+#home-quote {
+  background: url("../img/bg-quote.jpg") center center;
+  background-size: cover;
 }

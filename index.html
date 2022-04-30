@@ -14,6 +14,46 @@
 
 <body>
 
+
+  <!--Modal-->
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <small class="form-text text-muted">Esqueceu sua Senha? <a href="#">Clique aqui </a></small>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--Fecha Modal-->
+
+
+
   <!-- Menu -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
     <a href="index.html" class="navbar-brand">
@@ -25,7 +65,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown  mr-2">
-          <a class=" btn btn-outline-info dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> Locais
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> Locais
           </a>
           <div class="dropdown-menu ">
             <a class="dropdown-item" id="rolagem" href="#">California</a>
@@ -40,10 +80,10 @@
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
+          <a class="nav-link" href="login.html " data-toggle="modal" data-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item mx-2">
-          <button class="btn btn-outline-primary " type="submit">Inscreva-se</button>
+          <button class="btn btn-outline-primary" type="submit"> Inscreva-se</button>
         </li>
       </ul>
 
@@ -172,11 +212,118 @@
     </div>
   </section>
 
+  <section id="home-quote" class="p-md-5">
+    <blockquote class="blockquote text-center text-white p-md-5 p-3">
+      <p class="display-4"><em>"A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria estrada."</em></p>
+      <footer class="blockquote-footer text-white">Bob Dylan</footer>
+    </blockquote>
+  </section>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+      <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6" id="perguntasFrequentes">
+        <div class="pergunta py-2">
+          <a class="lead" data-toggle="collapse" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">→ É possível cancelar a viagem?</a>
+          <div id="pergunta1" class="collapse show" data-parent="#perguntasFrequentes" role="tabpanel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead" data-toggle="collapse" href="#pergunta2" aria-expanded="true" aria-controls="pergunta2">→ Qual a garantia que tenho se perder o voo?</a>
+          <div id="pergunta2" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead" data-toggle="collapse" href="#pergunta3" aria-expanded="true" aria-controls="pergunta3">→ Qual a principal forma de viagem?</a>
+          <div id="pergunta3" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead" data-toggle="collapse" href="#pergunta4" aria-expanded="true" aria-controls="pergunta4">→ Qual o melhor destino de viagem?</a>
+          <div id="pergunta4" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead" data-toggle="collapse" href="#pergunta5" aria-expanded="true" aria-controls="pergunta5">→ Vocês dão descontos para grupos grandes?</a>
+          <div id="pergunta5" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+      </div>
+    </div>
+    <div class="text-center my-4">
+      <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+      <a class="btn btn-primary btn-lg" href="contato.html">Entre em Contato</a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html">California</a></li>
+            <li><a href="local.html">Paris</a></li>
+            <li><a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>Fabricio.demolay1574@gmail.com</li>
+            <li>21 97957-4825</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0"> <a href="https://github.com/fabriciopheaker" class="text-white">Pheaker © 2022</a> </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>
